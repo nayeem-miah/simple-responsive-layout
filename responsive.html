@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            border:1px solid aqua;
+            max-width:1140px;
+            margin:0 auto;
+        }
+        .img-container{
+            display:flex;
+        }
+        .img-container div{
+            width:50%;
+        }
+        .img-container img{
+            width:100%;
+        }
+        @media screen and (max-width:576px){
+            .img-container{
+                /* flex-direction: column; */
+                flex-direction:column-reverse;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Website</h1>
+    <header>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Realative unit</li>
+            <li>body max width and horigental center align</li>
+            <li>Image fulid </li>
+            <li>two column flex and use media quary with flex direction column </li>
+            <li>multi column:gitd layout</li>
+            <li>menu responsive we need java script </li>
+        </ol>
+    </header>
+    <div class="img-container">
+        <div><img src="./images/aziz-acharki-y44xv-A5syg-unsplash.jpg" alt=""></div>
+        <div><img src="images/food.jpg" alt=""></div>
+    </div>
+</body>
+</html>
